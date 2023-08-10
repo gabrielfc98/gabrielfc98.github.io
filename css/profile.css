@@ -1,0 +1,251 @@
+/* Profile */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 90px 140px;
+  margin: 0 auto;
+  gap: 110px;
+  align-items: center;
+}
+
+.profile-picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile-info h1 {
+  font-size: 6rem;
+  line-height: 1.125;
+  font-weight: bold;
+  color: #01011d;
+  position: relative;
+}
+
+.profile-info h1::before {
+  content: "";
+  width: 154px;
+  height: 154px;
+  background: #3e6ebc;
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 100px;
+  left: -50px;
+}
+
+.profile-info h1::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 15px;
+  background: #3e6ebc;
+  opacity: 0.5;
+  left: 435px;
+  bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-info p::before {
+  content: url("/img/location.svg");
+  display: inline-block;
+  margin-right: 15px;
+}
+
+@media (max-width: 1350px) {
+  .profile-info h1 {
+    font-size: 5rem;
+  }
+  .profile-info p {
+    font-size: 2rem;
+  }
+  .profile-info h1::before {
+    width: 122px;
+    height: 122px;
+    bottom: 80px;
+    left: -35px;
+  }
+  .profile-info h1::after {
+    width: 45px;
+    height: 15px;
+    left: 360px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 80px 70px;
+  }
+
+  .profile-info h1 {
+    font-size: 4rem;
+  }
+  .profile-info p {
+    font-size: 1.5rem;
+  }
+  .profile-info h1::before {
+    width: 90px;
+    height: 90px;
+    bottom: 70px;
+    left: -20px;
+  }
+  .profile-info h1::after {
+    width: 45px;
+    height: 14px;
+    left: 290px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .profile-info h1 {
+    font-size: 3.5rem;
+  }
+  .profile-info p {
+    font-size: 1.5rem;
+  }
+  .profile-info h1::before {
+    width: 80px;
+    height: 80px;
+    bottom: 60px;
+    left: -20px;
+  }
+  .profile-info h1::after {
+    width: 35px;
+    height: 13px;
+    left: 255px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .profile-info h1 {
+    font-size: 3rem;
+  }
+  .profile-info p {
+    font-size: 1.225rem;
+  }
+  .profile-info h1::before {
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    left: -20px;
+  }
+  .profile-info h1::after {
+    width: 35px;
+    height: 13px;
+    left: 220px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-info h1 {
+    font-size: 2.5rem;
+  }
+  .profile-info p {
+    font-size: 1.125rem;
+  }
+  .profile-info h1::before {
+    width: 60px;
+    height: 60px;
+    bottom: 45px;
+    left: -17px;
+  }
+  .profile-info h1::after {
+    width: 35px;
+    height: 13px;
+    left: 185px;
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 840px) {
+  .profile-info h1 {
+    font-size: 2.25rem;
+  }
+  .profile-info p {
+    font-size: 1rem;
+  }
+  .profile-info h1::before {
+    width: 50px;
+    height: 50px;
+    bottom: 38px;
+    left: -11px;
+  }
+  .profile-info h1::after {
+    width: 30px;
+    height: 13px;
+    left: 165px;
+    bottom: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .profile-info h1 {
+    font-size: 2rem;
+  }
+  .profile-info p {
+    font-size: 0.875rem;
+  }
+  .profile-info h1::before {
+    width: 45px;
+    height: 45px;
+    bottom: 35px;
+    left: -11px;
+  }
+  .profile-info h1::after {
+    width: 30px;
+    height: 11px;
+    left: 145px;
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    padding: 60px 140px 60px 140px;
+  }
+  .profile-info h1 {
+    font-size: 3.5rem;
+    z-index: 1;
+  }
+  .profile-info p {
+    font-size: 1.5rem;
+  }
+  .profile-info h1::before {
+    width: 80px;
+    height: 80px;
+    bottom: 60px;
+    left: -20px;
+    z-index: -1;
+  }
+  .profile-info h1::after {
+    width: 35px;
+    height: 13px;
+    left: 255px;
+    bottom: 10px;
+  }
+  .profile-info {
+    place-self: center;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    place-content: center;
+  }
+}

@@ -1,0 +1,158 @@
+/* formation */
+
+.formation {
+  background: #010020;
+}
+
+.formation-text {
+  display: grid;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.formation-text p {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+}
+
+.formation-graduation p {
+  color: #a3a3a3;
+}
+
+.formation-graduation h3 {
+  margin: 0px;
+  padding: 0px;
+  color: #f0f0f0;
+  font-size: 1.125rem;
+}
+
+.formation-graduation section {
+  padding: 20px 20px 40px 20px;
+  display: grid;
+  gap: 15px;
+}
+
+.formation-graduation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
+  background: #04000b;
+  border: #292929 solid 1px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.formation-graduation::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: #041b54;
+  position: absolute;
+  display: block;
+  top: 55px;
+  left: -3px;
+}
+
+.coding-image {
+  background-image: url("/img/fotoformacao.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 4px;
+}
+
+figcaption {
+  color: #a3a3a3;
+  font-size: 0.625rem;
+  grid-column: 2;
+  margin-top: 5px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 1150px) {
+  .stylized-title {
+    font-size: 8rem;
+  }
+
+  .formation-graduation section p {
+    font-size: 0.875rem;
+  }
+
+  .formation-graduation h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .stylized-title {
+    font-size: 7rem;
+  }
+
+  .formation-graduation section p {
+    font-size: 0.75rem;
+  }
+
+  .formation-graduation h3 {
+    font-size: 0.875rem;
+  }
+  .formation-text p {
+    font-size: 1.125rem;
+  }
+  .container {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .stylized-title {
+    font-size: 6rem;
+  }
+
+  .formation-graduation section p {
+    font-size: 0.5rem;
+  }
+
+  .formation-graduation h3 {
+    font-size: 0.75rem;
+  }
+  .formation-text p {
+    font-size: 1rem;
+  }
+  .container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .stylized-title {
+    font-size: 5rem;
+  }
+
+  .formation-graduation section p {
+    font-size: 0.5rem;
+  }
+
+  .formation-graduation h3 {
+    font-size: 0.75rem;
+  }
+  .formation-text p {
+    font-size: 1rem;
+  }
+  .container {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .stylized-title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

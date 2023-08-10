@@ -1,0 +1,135 @@
+/* Courses */
+
+.courses {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 90px 40px;
+  gap: 40px;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 150px;
+}
+
+.course-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  display: grid;
+  position: relative;
+  text-transform: uppercase;
+  grid-column: 1/-1;
+}
+
+.course-title::before {
+  content: "";
+  width: 270px;
+  height: 22px;
+  background: #3e6ebc;
+  opacity: 0.5;
+  z-index: -1;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.course-info {
+  display: grid;
+  grid-column: 1;
+}
+
+.course-info h2 {
+  font-size: 1.5rem;
+  font-weight: medium;
+  color: #01011d;
+  display: flex;
+  align-items: center;
+}
+
+.course-info h2::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #03064e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.course-info p {
+  font-size: 1.125rem;
+  color: #141414;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.rect {
+  width: 11px;
+  height: 4px;
+  background: #666666;
+  display: block;
+  grid-column: 1/-1;
+  margin-left: 25px;
+}
+
+.institution::before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background: #041b54;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.course-data p {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+
+.workload {
+  margin-left: 20px;
+}
+
+.institution {
+  margin-bottom: 5px;
+}
+
+.course-data {
+  grid-column: 2;
+  justify-content: start;
+}
+
+@media (max-width: 1300px) {
+  .course-data p {
+    font-size: 1.125rem;
+    color: #3d3d3d;
+  }
+
+  @media (max-width: 1150px) {
+    .course-info h2 {
+      font-size: 1.225rem;
+    }
+
+    .course-info p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .course-container {
+      grid-template-columns: 1fr;
+      column-gap: 0px;
+      gap: 20px;
+    }
+    .course-data {
+      display: block;
+      grid-column: 1;
+      align-content: start;
+    }
+  }
+}

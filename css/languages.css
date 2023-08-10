@@ -1,0 +1,139 @@
+/* Languages */
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 90px 140px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.language-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 1 / span -1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.language-title::before {
+  content: "";
+  width: 285px;
+  height: 22px;
+  background: #3e6ebc;
+  opacity: 0.5;
+  z-index: -1;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.languages-topic {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: start;
+  grid-column: 1;
+  gap: 30px;
+}
+.language-topic-title img {
+  display: block;
+  max-width: 100%;
+}
+.language-topic-title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.language-topic-title h3 {
+  font-size: 2.25rem;
+  font-weight: medium;
+  color: #292929;
+  padding-left: 15px;
+}
+
+.languages-topic p {
+  font-size: 1.25rem;
+  color: #141414;
+}
+
+.language-formation p {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+
+.language-formation {
+  display: grid;
+  place-content: center;
+}
+
+.language-formation-instituition {
+  position: relative;
+}
+
+.language-formation-instituition::before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background: #041b54;
+  display: inline;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+
+@media (max-width: 1000px) {
+  .language-title {
+    font-size: 3.5rem;
+  }
+  .language-title::before {
+    width: 220px;
+  }
+  .language-topic-title h3 {
+    font-size: 2rem;
+  }
+  .languages-topic p {
+    font-size: 1rem;
+  }
+  .language-formation p {
+    font-size: 1.125rem;
+  }
+  @media (max-width: 800px) {
+    .language-title {
+      font-size: 3rem;
+    }
+    .language-title::before {
+      width: 185px;
+    }
+    .language-topic-title h3 {
+      font-size: 1.75rem;
+    }
+    .languages-topic p {
+      font-size: 0.875rem;
+    }
+    .language-formation p {
+      font-size: 1rem;
+    }
+    @media (max-width: 690px) {
+      .languages {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: start;
+        max-width: 1200px;
+        padding: 60px 140px;
+        margin: 0 auto;
+        gap: 20px;
+      }
+      .language-formation {
+        display: grid;
+        place-content: start;
+        margin-left: 20px;
+      }
+    }
+  }
+}

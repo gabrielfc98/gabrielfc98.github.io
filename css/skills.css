@@ -1,0 +1,111 @@
+/* skills */
+
+.skills {
+  background: #010020;
+}
+
+.skills-topics {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+.rect-skill {
+  width: 290px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.skill-cominication,
+.skill-team,
+.skill-learning,
+.skill-adaptability {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skill-cominication::before {
+  content: url("/img/comunicacao.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skill-team::before {
+  content: url("/img/equipe.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skill-learning::before {
+  content: url("/img/aprendizado.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skill-adaptability::before {
+  content: url("/img/adptabilidade.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skill-item {
+  display: grid;
+  gap: 10px;
+}
+
+.rect-comunication {
+  background: linear-gradient(to right, #1453b2 90%, #fafafa 10%);
+}
+
+.rect-team {
+  background: linear-gradient(to right, #1453b2 95%, #fafafa 5%);
+}
+
+.rect-learning {
+  background: linear-gradient(to right, #1453b2 85%, #fafafa 15%);
+}
+
+.rect-adaptability {
+  background: linear-gradient(to right, #1453b2 80%, #fafafa 20%);
+}
+
+@media (max-width: 1150px) {
+  .stylized-title {
+    font-size: 8rem;
+  }
+
+  @media (max-width: 1000px) {
+    .stylized-title {
+      font-size: 7rem;
+    }
+    .container {
+      column-gap: 20px;
+    }
+  }
+  @media (max-width: 900px) {
+    .stylized-title {
+      font-size: 6rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .stylized-title {
+      font-size: 5rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 60px 40px 60px 40px;
+    }
+
+    .stylized-title {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+/* footer */
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 90px 40px;
+}
+
+.footer-message {
+  font-size: 2.5rem;
+  color: #01011d;
+  font-weight: medium;
+}
+
+.footer-user-info {
+  display: grid;
+  justify-items: center;
+}
+
+.footer-contact {
+  font-size: 2.25rem;
+  font-weight: medium;
+  color: #292929;
+  display: grid;
+  align-self: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: inline-block;
+}
+
+.footer-links a {
+  margin-right: 20px;
+}
+.footer-links img {
+  max-width: 100%;
+}
+
+.footer-contact .email {
+  display: flex;
+  align-items: start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.email::before {
+  content: url("/img/email.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-contact .phone {
+  display: flex;
+  align-items: start;
+  margin: 0px;
+  padding: 0px;
+}
+.phone::before {
+  content: url("/img/telefone.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 1150px) {
+  .footer-message {
+    font-size: 2rem;
+  }
+  .footer-contact {
+    font-size: 1.5rem;
+  }
+
+  .footer-contact .email {
+    align-items: center;
+  }
+
+  .footer-contact .phone {
+    align-items: center;
+  }
+  @media (max-width: 1000px) {
+    .footer-message {
+      font-size: 1.5rem;
+    }
+    .footer-contact {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .footer-message {
+      font-size: 1.225rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .footer-message {
+      font-size: 1.125rem;
+    }
+  }
+  @media (max-width: 650px) {
+    .footer-message {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-message {
+      font-size: 0.875rem;
+    }
+    .footer-contact {
+      font-size: 0.875rem;
+    }
+    @media (max-width: 550px) {
+      .contact {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .footer-user-info {
+        grid-row: 2;
+        gap: 40px;
+      }
+      .footer-links img {
+        max-width: 100%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .footer-contact .email {
+        align-items: center;
+      }
+
+      .footer-contact .phone {
+        align-items: center;
+      }
+    }
+  }
+}

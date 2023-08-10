@@ -1,0 +1,29 @@
+/* general decoration patterns */
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  background: #fafafa;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.stylized-title {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: #292929;
+  max-width: 4ch;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 90px 40px;
+}
